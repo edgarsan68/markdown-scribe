@@ -7,6 +7,7 @@ repository = "https://github.com/DhanushNehru/markdown-scribe"
 license = "MIT"
 keywords = ["markdown", "renderer", "editor", "cli", "tui"]
 categories = ["command-line-utilities", "text-editors"]
+edition = "2021"
 
 [dependencies]
 clap = { version = "4.5.53", features = ["derive"] }

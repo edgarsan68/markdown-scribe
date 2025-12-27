@@ -1,8 +1,6 @@
 use pulldown_cmark::{html, Parser, Options};
-use syntect::easy::HighlightLines;
 use syntect::parsing::SyntaxSet;
-use syntect::highlighting::{ThemeSet, StyleModifier};
-use syntect::html::highlighted_html_for_string;
+use syntect::highlighting::ThemeSet;
 
 fn render_markdown_to_html(input: &str) -> String {
     let mut options = Options::empty();
@@ -11,9 +9,9 @@ fn render_markdown_to_html(input: &str) -> String {
     let parser = Parser::new_ext(input, options);
 
     // Basic syntax highlighting setup
-    let ss = SyntaxSet::load_defaults_newlines();
+    let _ss = SyntaxSet::load_defaults_newlines();
     let ts = ThemeSet::load_defaults();
-    let theme = &ts.themes["base16-ocean.dark"];
+    let _theme = &ts.themes["base16-ocean.dark"];
 
     // For code blocks, you'd integrate highlighting here (expand later)
     let mut html_output = String::new();
