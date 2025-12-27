@@ -1559,6 +1559,7 @@ dependencies = [
 name = "markdown-scribe"
 version = "0.1.0"
 dependencies = [
+ "anyhow",
  "clap",
  "crossterm",
  "notify",
