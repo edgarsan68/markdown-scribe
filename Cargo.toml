@@ -1,0 +1,19 @@
+[package]
+name = "markdown-scribe"
+version = "0.1.0"
+authors = ["DhanushNehru"]
+description = "A client-side Markdown renderer and editor in Rust with CLI and TUI support."
+repository = "https://github.com/DhanushNehru/markdown-scribe"
+license = "MIT"
+keywords = ["markdown", "renderer", "editor", "cli", "tui"]
+categories = ["command-line-utilities", "text-editors"]
+
+[dependencies]
+clap = { version = "4.5.53", features = ["derive"] }
+crossterm = "0.29.0"
+notify = "8.2.0"
+printpdf = "0.8.2"
+pulldown-cmark = "0.13.0"
+ratatui = "0.30.0"
+syntect = "5.3.0"
+webbrowser = "1.0.6"
